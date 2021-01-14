@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-test-secrets
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    spec:
+      containsers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - cointainerPort: 80
