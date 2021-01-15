@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: loeyck/group3_nginx
+        image: loeyck/group3_nginx:latest
         ports:
         - containerPort: 80
